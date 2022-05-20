@@ -1,0 +1,16 @@
+package com.gabrielsantos.exerciciosalgoritmosbasicos;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+		/**
+		 *  Faça um algoritmo que leia a idade de uma pessoa expressa em dias
+		 *  e mostre-a expressa em anos, meses e dias.
+		 */
+		Scanner entradaUsuario = new Scanner(System.in);
+		int idadeEmDias = 0;
+		int idadeEmAnos = 0;
+	}
+}

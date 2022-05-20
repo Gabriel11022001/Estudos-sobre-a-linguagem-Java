@@ -1,0 +1,13 @@
+
+public class TestaVariaveis {
+
+	public static void main(String[] args) {
+		int idade = 21;
+		String nome = "Gabriel Rodrigues dos Santos";
+		System.out.println("Meu nome é " + nome + " e eu tenho " + idade + " anos de idade!");
+		double primeiroValor = 0, segundoValor = 0;
+	}
+	private static double somar(double primeiroValor, double segundoValor) {
+		return primeiroValor + segundoValor;
+	}
+}

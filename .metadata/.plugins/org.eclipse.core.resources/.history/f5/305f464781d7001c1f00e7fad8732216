@@ -1,0 +1,22 @@
+
+public class TestaPontoFlutuante {
+
+	public static void main(String[] args) {
+		double salario;
+		salario = 3500.50;
+		double idade = 21;
+		System.out.println("Meu salário é: R$" + salario);
+		System.out.println("Minha idade é: " + idade + " anos de idade");
+		double divisao = 34.87 / 2;
+		System.out.println(divisao);
+		int outraDivisao = 5 / 2;
+		/**
+		 * No exemplo abaixo, como estou dividindo 5(inteiro) por 2(inteiro)
+		 * o valor da operação será 2, pois 5 / 2 = 2.5 mas como estou dividindo um
+		 * número inteiro por outro número inteiro, o valor 0.5 será desconsiderado e
+		 * será pego somente o valor inteiro do resultado da operação.
+		 */
+		System.out.println(outraDivisao);
+		System.out.println();
+	}
+}

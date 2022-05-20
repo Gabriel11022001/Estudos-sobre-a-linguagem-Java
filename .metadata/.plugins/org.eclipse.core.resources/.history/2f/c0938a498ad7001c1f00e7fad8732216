@@ -1,0 +1,14 @@
+
+public class TestaCondicional {
+
+	public static void main(String[] args) {
+		int idade = 12;
+		if (idade < 0) {
+			System.out.println("Não existe a possibilidade de você ter uma idade negativa!");
+		} else if (idade >= 18) {
+			System.out.println("Você tem " + idade + " anos de idade, você é de maior!");
+		} else {
+			System.out.println("Você tem " + idade + " anos de idade, você é de menor!");
+		}
+	}
+}
