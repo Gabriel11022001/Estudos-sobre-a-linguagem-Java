@@ -3,29 +3,33 @@ public class TestaReferencia {
 
 	public static void main(String[] args) {
 		Conta primeiraConta = new Conta();
-		primeiraConta.agencia = 12345;
-		primeiraConta.saldo = 3400;
-		primeiraConta.numero = 1223;
-		primeiraConta.titular = "Gabriel Rodrigues dos Santos";
+		primeiraConta.setAgencia(12345);
+		primeiraConta.setNumero(1223);
+		primeiraConta.setTitular(new Titular());
+		primeiraConta.getTitular().setNome("Gabriel");
+		primeiraConta.getTitular().setCpf("123.456.789-00");
+		primeiraConta.getTitular().setProfissao("Analista Programador Júnior");
+		primeiraConta.depositar(300000);
 		Conta segundaConta = primeiraConta;
 		System.out.println("Dados da primeira conta:");
-		System.out.println("Titular: " + primeiraConta.titular);
-		System.out.println("Saldo: R$" + primeiraConta.saldo);
-		System.out.println("Número da conta: " + primeiraConta.numero);
-		System.out.println("Número da agência: " + primeiraConta.agencia);
+		System.out.println("Dados do titular:");
+		primeiraConta.getTitular().apresentarInformacoes();
+		System.out.println("Saldo: R$" + primeiraConta.getSaldo());
+		System.out.println("Número da conta: " + primeiraConta.getNumero());
+		System.out.println("Número da agência: " + primeiraConta.getAgencia());
 		System.out.println("Dados da segunda conta:");
-		System.out.println("Titular: " + segundaConta.titular);
-		System.out.println("Saldo: R$" + segundaConta.saldo);
-		System.out.println("Número da conta: " + segundaConta.numero);
-		System.out.println("Número da agência: " + segundaConta.agencia);
-		segundaConta.saldo += 300;
-		System.out.println("Saldo da primeira conta após adicionar R$300,00 na segunda conta: R$" + primeiraConta.saldo);
-		System.out.println("Saldo da segunda conta após a adição de R$300,00 na mesma: R$" + primeiraConta.saldo);
+		System.out.println("Dados do titular:");
+		segundaConta.getTitular().apresentarInformacoes();
+		System.out.println("Saldo: R$" + segundaConta.getSaldo());
+		System.out.println("Número da conta: " + segundaConta.getNumero());
+		System.out.println("Número da agência: " + segundaConta.getAgencia());
+		segundaConta.depositar(300);
+		System.out.println("Saldo da primeira conta após adicionar R$300,00 na segunda conta: R$" + primeiraConta.getSaldo());
+		System.out.println("Saldo da segunda conta após a adição de R$300,00 na mesma: R$" + primeiraConta.getSaldo());
 		Conta terceiraConta = new Conta();
-		terceiraConta.titular = primeiraConta.titular;
-		terceiraConta.saldo = primeiraConta.saldo;
-		terceiraConta.numero = primeiraConta.numero;
-		terceiraConta.agencia = primeiraConta.agencia;
+		terceiraConta.setTitular(primeiraConta.getTitular());
+		terceiraConta.setNumero(primeiraConta.getNumero());
+		terceiraConta.setAgencia(primeiraConta.getAgencia());
 		/**
 		 * No exemplo abaixo, como primeiraConta e segundaConta são 
 		 * referências que apontam para o mesmo objeto na memória,

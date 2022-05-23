@@ -4,21 +4,22 @@ public class CriaConta {
 
 	private static void definirPropriedadesDaConta(Conta conta) {
 		Scanner entradaUsuario = new Scanner(System.in);
+		conta.setTitular(new Titular());
 		System.out.println("Informe o nome do titular:");
-		conta.titular = entradaUsuario.nextLine();
-		System.out.println("Informe o saldo da conta:");
-		conta.saldo = entradaUsuario.nextDouble();
+		conta.getTitular().setNome(entradaUsuario.next());
 		System.out.println("Informe o número da conta:");
-		conta.numero = entradaUsuario.nextInt();
+		conta.setNumero(entradaUsuario.nextInt());
 		System.out.println("Informe o número da agência:");
-		conta.agencia = entradaUsuario.nextInt();
+		conta.setAgencia(entradaUsuario.nextInt());
+		System.out.println("Quanto você gostaria de depositar?:");
+		conta.depositar(entradaUsuario.nextDouble());
 	}
 	private static void apresentarValoresDasPropriedadesDaConta(Conta conta) {
 		System.out.println("******************************");
-		System.out.println("Titular: " + conta.titular);
-		System.out.println("Número da conta: " + conta.numero);
-		System.out.println("Número da agência: " + conta.agencia);
-		System.out.println("Saldo: R$" + conta.saldo);
+		System.out.println("Titular: " + conta.getTitular().getNome());
+		System.out.println("Número da conta: " + conta.getNumero());
+		System.out.println("Número da agência: " + conta.getAgencia());
+		System.out.println("Saldo: R$" + conta.getSaldo());
 	}
 	public static void main(String[] args) {
 		Conta conta1 = new Conta();
