@@ -25,14 +25,26 @@ public class Exercicio2 {
 		 * segunda questão, e assim por diante.
 		 * acertos: retorna a quantidade de questões que o aluno acertou
 		 * nota: retorna a nota que o aluno tirou na prova
-		 * maior: recebe como parâmetro um outro objeto da classe Prova e retorna a nota do aluno que
-		 * acertou mais questões; se houver empate, retorna a maior nota; se houver empate
-		 * novamente, retorna a nota do aluno representado no objeto corrente
 		 */
 		Gabarito gabarito = new Gabarito();
 		Prova prova1 = new Prova(gabarito);
 		prova1.respostaAluno('C');
-		char letra = ' ';
-		System.out.println();
+		prova1.respostaAluno('B');
+		prova1.respostaAluno('A');
+		prova1.respostaAluno('D');
+		prova1.respostaAluno('E');
+		prova1.respostaAluno('A');
+		prova1.respostaAluno('A');
+		prova1.respostaAluno('C');
+		prova1.respostaAluno('C');
+		prova1.respostaAluno('C');
+		prova1.respostaAluno('D');
+		prova1.respostaAluno('D');
+		prova1.respostaAluno('A');
+		prova1.respostaAluno('B');
+		prova1.respostaAluno('E');
+		prova1.respostaAluno('C');
+		System.out.println("Quantidade de acertos: " + prova1.acertos());
+		System.out.println("Nota do aluno: " + prova1.nota());
 	}
 }

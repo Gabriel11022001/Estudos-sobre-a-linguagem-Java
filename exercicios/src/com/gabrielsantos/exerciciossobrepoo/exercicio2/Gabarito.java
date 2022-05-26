@@ -24,4 +24,7 @@ public class Gabarito {
 		this.respostasQuestoes[13] = 'A';
 		this.respostasQuestoes[14] = 'B';
 	}
+	public char[] getRespostas() {
+		return this.respostasQuestoes;
+	}
 }

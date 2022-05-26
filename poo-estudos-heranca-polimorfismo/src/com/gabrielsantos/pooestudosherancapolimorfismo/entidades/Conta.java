@@ -69,7 +69,7 @@ public class Conta {
 			return;
 		}
 		this.saldo -= valor;
-		System.out.println("Saque realizado com sucesso!");
+		System.out.println("Saque de R$" + valor + " realizado com sucesso!");
 	}
 	public void transferir(Conta contaDestino, double valor) {
 		if (valor < 0) {
@@ -86,5 +86,8 @@ public class Conta {
 	}
 	public static int getQuantidadeContasCriadas() {
 		return Conta.quantidadeContas;
+	}
+	protected void setSaldo(double saldo) {
+		this.saldo = saldo;
 	}
 }
