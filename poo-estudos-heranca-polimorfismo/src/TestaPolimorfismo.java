@@ -1,4 +1,5 @@
 import com.gabrielsantos.pooestudosherancapolimorfismo.entidades.AnalistaProgramador;
+import com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Designer;
 import com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Funcionario;
 import com.gabrielsantos.pooestudosherancapolimorfismo.entidades.GerenciadorDeBonificacao;
 import com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Gerente;
@@ -21,6 +22,14 @@ public class TestaPolimorfismo {
 		gerenciadorDeBonificacao.calcularTotalBonificacoes(gerente1);
 		System.out.println("Bonificação do Gerente: R$" + gerente1.getBonificacao());
 		System.out.println("Bonificação do Analista Programador: R$" + analistaProgramador1.getBonificacao());
+		System.out.println("Valor total em bonificações: R$" + gerenciadorDeBonificacao.getTotalBonificacoes());
+		Funcionario designer1 = new Designer();
+		designer1.setNome("Gustavo");
+		designer1.setCpf("123.456.789-98");
+		designer1.setSalario(4200);
+		designer1.apresentarDados();
+		gerenciadorDeBonificacao.calcularTotalBonificacoes(designer1);
+		System.out.println("Bonificação do Designer 1: R$" + designer1.getBonificacao());
 		System.out.println("Valor total em bonificações: R$" + gerenciadorDeBonificacao.getTotalBonificacoes());
 	}
 }

@@ -4,8 +4,6 @@
     <fullyQualifiedTypeName name="com.gabrielsantos.exerciciosalgoritmosbasicos.PercorreVetor"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.exerciciossobrepoo.exercicio1.Aluno"/>
     <fullyQualifiedTypeName name="Titular"/>
     <fullyQualifiedTypeName name="Conta"/>
@@ -13,13 +11,9 @@
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.exerciciossobrepoo.exercicio2.Gabarito"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.exerciciossobrepoo.exercicio2.Prova"/>
-    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Gerente"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.GerenciadorDeBonificacao"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Funcionario"/>
-    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.AnalistaProgramador"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Conta"/>
-    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.ContaCorrente"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.ContaPoupanca"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Titular"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.exerciciossobrepoo.exercicio3.Vetor"/>
@@ -29,5 +23,23 @@
     <fullyQualifiedTypeName name="com.gabrielsantos.exerciciossobrepoo.exercicio3.Repositorio"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.exerciciossobrepoo.exercicio3.AnalistaDeSuporte"/>
     <fullyQualifiedTypeName name="com.gabrielsantos.exerciciossobrepoo.exercicio3.IPessoa"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.DateTimeAtCompleted"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.gabrielsantos.exerciciossobrepoo.exercicio4.Pessoa"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Funcionario"/>
+    <fullyQualifiedTypeName name="java.lang.instrument.ClassDefinition"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.SistemaInterno"/>
+    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Designer"/>
+    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.AnalistaProgramador"/>
+    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.IAutenticavel"/>
+    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.Gerente"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="javax.naming.LimitExceededException"/>
+    <fullyQualifiedTypeName name="com.gabrielsantos.pooestudosherancapolimorfismo.entidades.ContaCorrente"/>
 </qualifiedTypeNameHistroy>

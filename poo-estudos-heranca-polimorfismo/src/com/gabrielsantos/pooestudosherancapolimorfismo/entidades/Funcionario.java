@@ -1,6 +1,6 @@
 package com.gabrielsantos.pooestudosherancapolimorfismo.entidades;
 
-public class Funcionario {
+public abstract class Funcionario {
 
 	private String nome;
 	private String cpf;
@@ -24,9 +24,7 @@ public class Funcionario {
 	public double getSalario() {
 		return this.salario;
 	}
-	public double getBonificacao() {
-		return this.salario * 0.1;
-	}
+	public abstract double getBonificacao();
 	public void apresentarDados() {
 		System.out.println("****************************");
 		System.out.println("Nome: " + this.getNome());
