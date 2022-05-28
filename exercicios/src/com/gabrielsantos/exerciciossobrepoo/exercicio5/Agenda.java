@@ -19,7 +19,44 @@ public class Agenda {
 		System.out.println(pessoa.getNome() + " foi adicionado com sucesso na agenda!");
 	}
 	public void removerPessoa(String nome) {
-		// Ainda vou implementar
+		int qtdPessoasNaAgenda = this.getQuantidadePessoasAdicionadas();
+		if (qtdPessoasNaAgenda == 0) {
+			System.out.println("A agenda não possui contatos!");
+			return;
+		}
+		Pessoa[] pessoasAux = new Pessoa[this.pessoas.length - 1];
+		int indicePessoa = buscarPessoa(nome);
+		if (indicePessoa == -2) {
+			System.out.println("Não existe na agenda uma pessoa com esse nome!");
+			return;
+		}
+		indicePessoa--;
+		if (indicePessoa == 0) {
+			for (int cont = 1; cont < this.pessoas.length; cont++) {
+				pessoasAux[cont - 1] = this.pessoas[cont];
+			}
+			this.pessoas = pessoasAux;
+			System.out.println(nome + " removido(a) com sucesso da agenda!");
+			return;
+		}
+		if (indicePessoa == (this.pessoas.length - 1)) {
+			for (int cont = 0; cont < (this.pessoas.length - 1); cont++) {
+				pessoasAux[cont] = this.pessoas[cont];
+			}
+			this.pessoas = pessoasAux;
+			System.out.println(nome + " removido(a) com sucesso da agenda!");
+			return;
+		}
+		int indiceInicialPrimeiraParte = 0;
+		int indiceInicialSegundaParte = indicePessoa + 1;
+		for (int cont = indiceInicialPrimeiraParte; cont < indicePessoa; cont++) {
+			pessoasAux[cont] = this.pessoas[cont];
+		}
+		for (int cont = indiceInicialSegundaParte; cont < this.pessoas.length; cont++) {
+			pessoasAux[cont - 1] = this.pessoas[cont];
+		}
+		this.pessoas = pessoasAux;
+		System.out.println(nome + " removido(a) com sucesso da agenda!");
 	}
 	public int buscarPessoa(String nome) {
 		// -1 Nenhuma pessoa na agenda

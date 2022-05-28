@@ -32,6 +32,18 @@ public class Exercicio5 {
 			agenda.apresentarDadosAgenda();
 			agenda.apresentarDadosDaPessoa("Edu");
 			agenda.apresentarDadosDaPessoa("Gabriel");
+			agenda.removerPessoa("Gabriel");
+			System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+			agenda.apresentarDadosAgenda();
+			agenda.removerPessoa("Vivian");
+			System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+			agenda.apresentarDadosAgenda();
+			agenda.removerPessoa("Maria Eduarda");
+			System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+			agenda.apresentarDadosAgenda();
+			agenda.removerPessoa("Fulano de tal");
+			System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+			agenda.apresentarDadosAgenda();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

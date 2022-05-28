@@ -3,9 +3,13 @@ public class TestePilhaExecucao {
 
 	private static void metodo1() {
 		System.out.println("Entrando no método 1!");
-		int a = 1, b = 0;
-		// int div = a / b;
-		// System.out.println(div);
+		try {
+			int a = 1, b = 0;
+			int div = a / b;
+			System.out.println(div);
+		} catch (ArithmeticException e) {
+			System.out.println("Não é possível realizar divisão po 0!");
+		}
 		metodo2();
 		System.out.println("Saindo do método 1!");
 	}
@@ -20,7 +24,11 @@ public class TestePilhaExecucao {
 	}
 	public static void main(String[] args) {
 		System.out.println("Início do main!");
-		metodo1();
+		try {
+			metodo1();	
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Você ultrapassou o tamanho limite do array!");
+		}
 		System.out.println("Fim do main!");
 	}
 }
