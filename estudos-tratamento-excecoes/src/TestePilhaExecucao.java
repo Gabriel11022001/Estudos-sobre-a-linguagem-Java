@@ -22,12 +22,28 @@ public class TestePilhaExecucao {
 		}
 		System.out.println("Saindo do método 2!");
 	}
+	private static void metodo3() throws SegundaException {
+		// Conta conta = null;
+		// if (conta == null) {
+			// throw new NullPointerException("NullPointerException");
+		// }
+		// throw new MinhaException("Testado a minha exceção!");
+		throw new SegundaException("Testando uma exceção checada!");
+	}
+	private static void metodo4() throws SegundaException {
+		System.out.println("Entrando no método 4!");
+		metodo3();
+		System.out.println("Saindo do método 4!");
+	}
 	public static void main(String[] args) {
 		System.out.println("Início do main!");
 		try {
-			metodo1();	
+			// metodo1();	
+			metodo4();
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Você ultrapassou o tamanho limite do array!");
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
 		System.out.println("Fim do main!");
 	}
