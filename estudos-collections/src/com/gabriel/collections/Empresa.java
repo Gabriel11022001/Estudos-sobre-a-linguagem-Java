@@ -28,23 +28,23 @@ public class Empresa {
 	}
 	public void registrarFuncionario(Funcionario funcionario) {
 		if (funcionario == null) {
-			throw new RuntimeException("O objeto funcionï¿½rio nï¿½o pode apontar para null!");
+			throw new RuntimeException("O objeto funcionário não pode apontar para null!");
 		}
 		if (funcionario.getNome().equals("") && funcionario.getSalario() == 0) {
-			throw new RuntimeException("Informe o nome e o salï¿½rio do funcionï¿½rio!");
+			throw new RuntimeException("Informe o nome e o salário do funcionário!");
 		}
 		if (funcionario.getNome().equals("")) {
-			throw new RuntimeException("Informe o nome do funcionï¿½rio!");
+			throw new RuntimeException("Informe o nome do funcionário!");
 		}
 		if (funcionario.getSalario() == 0) {
-			throw new RuntimeException("Informe o salï¿½rio do funcionï¿½rio!");
+			throw new RuntimeException("Informe o salário do funcionário!");
 		}
 		this.totalBonificacoesDaEmpresa += funcionario.calcularBonificacao();
 		this.funcionarios.add(funcionario);
 	}
 	public List<Funcionario> getFuncionarios() {
 		if (this.funcionarios.size() == 0) {
-			throw new RuntimeException("A empresa nï¿½o possui funcionarios registrados!");
+			throw new RuntimeException("A empresa não possui funcionarios registrados!");
 		}
 		return this.funcionarios;
 	}
@@ -53,23 +53,23 @@ public class Empresa {
 	}
 	public void apresentarOsFuncionariosDaEmpresa() {
 		if (this.getFuncionarios().size() == 0) {
-			throw new RuntimeException("A empresa nï¿½o possui funcionarios registrados!");
+			throw new RuntimeException("A empresa não possui funcionarios registrados!");
 		}
 		for (Funcionario func : this.getFuncionarios()) {
 			System.out.println("========================================");
 			System.out.println("Nome do funcionï¿½rio: " + func.getNome());
-			System.out.println("Salï¿½rio: R$" + func.getSalario());
-			System.out.println("Bonificaï¿½ï¿½o: R$" + func.calcularBonificacao());
+			System.out.println("Salário: R$" + func.getSalario());
+			System.out.println("Bonificação: R$" + func.calcularBonificacao());
 			System.out.println("========================================");
 		}
 	}
 	public void demitirFuncionario(Funcionario funcionario) {
 		if (funcionario == null) {
 			throw new RuntimeException(
-					"A referï¿½ncia para o objeto do tipo Funcionario nï¿½o deve apontar para null!");
+					"A referência para o objeto do tipo Funcionario não deve apontar para null!");
 		}
 		this.getFuncionarios().remove(funcionario);
 		this.totalBonificacoesDaEmpresa -= funcionario.calcularBonificacao();
-		System.out.println("Funcionï¿½rio demitido!");
+		System.out.println("Funcionário demitido!");
 	}
 }

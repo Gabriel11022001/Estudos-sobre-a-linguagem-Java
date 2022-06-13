@@ -26,7 +26,7 @@ public abstract class Funcionario {
 	}
 	public void setSalario(double salario) {
 		if (salario <= 0) {
-			throw new RuntimeException("O salÃ¡rio do funcionÃ¡rio nÃ£o deve ser menor ou igual a R$0,00!");
+			throw new RuntimeException("O salário do funcionário não deve ser menor ou igual a R$0,00!");
 		}
 		this.salario = salario;
 	}

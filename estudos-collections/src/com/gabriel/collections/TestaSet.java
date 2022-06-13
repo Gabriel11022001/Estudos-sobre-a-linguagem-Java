@@ -31,7 +31,7 @@ public class TestaSet {
 		nomes.add("Maria Helena da Silva");
 		nomes.add("Pedro Henrique da Silva");
 		/**
-		 * Os Sets nï¿½o aceitam elementos repetidos
+		 * Os Sets não aceitam elementos repetidos
 		 */
 		nomes.add("Gabriel Rodrigues dos Santos");
 		System.out.println(nomes);

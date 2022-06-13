@@ -16,12 +16,12 @@ public class TestaEmpresa {
 			System.out.println("Total de bonificações: R$" + empresa.getTotalBonificacoes());
 			empresa.apresentarOsFuncionariosDaEmpresa();
 			System.out.println("Total de bonificaï¿½ï¿½es da empresa: R$" + empresa.getTotalBonificacoes());
-			empresa.registrarFuncionario(new AnalistaDeSistemas("Josï¿½ Miguel", 6000));
-			System.out.println("Total de bonificaï¿½ï¿½es da empresa: R$" + empresa.getTotalBonificacoes());
+			empresa.registrarFuncionario(new AnalistaDeSistemas("José Miguel", 6000));
+			System.out.println("Total de bonificações da empresa: R$" + empresa.getTotalBonificacoes());
 			Funcionario funcionarioASerDemitido = empresa.getFuncionarios().get(4);
 			empresa.demitirFuncionario(funcionarioASerDemitido);
 			empresa.apresentarOsFuncionariosDaEmpresa();
-			System.out.println("Total de bonificaï¿½ï¿½es da empresa: R$" + empresa.getTotalBonificacoes());
+			System.out.println("Total de bonificações da empresa: R$" + empresa.getTotalBonificacoes());
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();

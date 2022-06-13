@@ -26,7 +26,7 @@ public class TestaListaDePessoas {
 				System.out.println("Email: " + pessoa.getEmail().getEmail());
 				System.out.println("Telefones:");
 				for (Telefone telefone : pessoa.getTelefones()) {
-					System.out.println("Nï¿½mero: " + telefone.getNumero());
+					System.out.println("Número: " + telefone.getNumero());
 				}
 				System.out.println("======================================================");
 			}
@@ -39,7 +39,7 @@ public class TestaListaDePessoas {
 				System.out.println("Email: " + pessoa.getEmail().getEmail());
 				System.out.println("Telefones:");
 				for (Telefone telefone : pessoa.getTelefones()) {
-					System.out.println("Nï¿½mero: " + telefone.getNumero());
+					System.out.println("Número: " + telefone.getNumero());
 				}
 				System.out.println("======================================================");
 			}

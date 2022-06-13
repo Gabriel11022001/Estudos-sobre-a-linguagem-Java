@@ -12,7 +12,7 @@ public class TestantoListas {
 		nomes.add("Luisa Cardoso da Silva");
 		ArrayList<String> maisNomes = new ArrayList<String>();
 		maisNomes.add("Maria Eduarda da Silva");
-		maisNomes.add("Josï¿½ Pereira da Silva");
+		maisNomes.add("José Pereira da Silva");
 		nomes.addAll(maisNomes);
 		nomes.forEach((nome) -> {
 			System.out.println(nome);
@@ -25,7 +25,7 @@ public class TestantoListas {
 			System.out.println(nome);
 		}
 		for (int cont = 0; cont < nomes.size(); cont++) {
-			System.out.println("Nome da pessoa no ï¿½ndice: [" + cont + "] = " + nomes.get(cont));
+			System.out.println("Nome da pessoa no índice: [" + cont + "] = " + nomes.get(cont));
 		}
 		Collections.sort(nomes);
 		nomes.forEach((nome) -> {
