@@ -12,5 +12,4 @@ public class ComparadorDePessoas implements Comparator<Pessoa> {
 		}
 		return 0;
 	}
-
 }
