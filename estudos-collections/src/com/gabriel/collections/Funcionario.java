@@ -31,4 +31,15 @@ public abstract class Funcionario {
 		this.salario = salario;
 	}
 	public abstract double calcularBonificacao();
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null) {
+			throw new RuntimeException("O objeto para comparação não pode apontar para null!");
+		}
+		Funcionario funcComparacao = (Funcionario) obj;
+		if (funcComparacao.getNome().equals(this.getNome())) {
+			return true;
+		}
+		return false;
+	}
 }

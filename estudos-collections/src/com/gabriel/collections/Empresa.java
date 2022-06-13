@@ -57,7 +57,7 @@ public class Empresa {
 		}
 		for (Funcionario func : this.getFuncionarios()) {
 			System.out.println("========================================");
-			System.out.println("Nome do funcionï¿½rio: " + func.getNome());
+			System.out.println("Nome do funcionário: " + func.getNome());
 			System.out.println("Salário: R$" + func.getSalario());
 			System.out.println("Bonificação: R$" + func.calcularBonificacao());
 			System.out.println("========================================");
@@ -71,5 +71,8 @@ public class Empresa {
 		this.getFuncionarios().remove(funcionario);
 		this.totalBonificacoesDaEmpresa -= funcionario.calcularBonificacao();
 		System.out.println("Funcionário demitido!");
+	}
+	public boolean funcionarioEstaRegistrado(Funcionario funcionario) {
+		return this.funcionarios.contains(funcionario);
 	}
 }

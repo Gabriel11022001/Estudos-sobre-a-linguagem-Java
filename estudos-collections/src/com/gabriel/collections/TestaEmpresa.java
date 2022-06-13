@@ -22,6 +22,19 @@ public class TestaEmpresa {
 			empresa.demitirFuncionario(funcionarioASerDemitido);
 			empresa.apresentarOsFuncionariosDaEmpresa();
 			System.out.println("Total de bonificações da empresa: R$" + empresa.getTotalBonificacoes());
+			AnalistaDeSistemas analistaDeSistemas1 = new AnalistaDeSistemas();
+			analistaDeSistemas1.setNome("Pedro Gustavo da Silva");
+			AnalistaDeSistemas analistaDeSistemas2 = new AnalistaDeSistemas();
+			analistaDeSistemas2.setNome("Pedro Gustavo da Silva");
+			WebDesigner webDesigner1 = new WebDesigner();
+			webDesigner1.setNome("Pedro Gustavo da Silva");
+			System.out.println(analistaDeSistemas1.equals(analistaDeSistemas2));
+			System.out.println(analistaDeSistemas1.equals(webDesigner1));
+			Funcionario func1 = new AnalistaDeSistemas("Maria Fernanda da Silva", 4000);
+			Funcionario func2 = new WebDesigner("Eduarda Pereira da Silva", 4000);
+			empresa.registrarFuncionario(func1);
+			empresa.registrarFuncionario(func2);
+			empresa.apresentarOsFuncionariosDaEmpresa();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
