@@ -32,7 +32,12 @@ public class Passagem {
 		if (dataRetorno == null) {
 			throw new Exception("Informe a data de volta da viagem!");
 		}
-		// Invocar os métodos sets
+		this.setDataIda(dataIda);
+		this.setDataRetorno(dataRetorno);
+		this.setDestino(destino);
+		this.setOrigem(origem);
+		this.setPassageiro(passageiro);
+		this.setValor(valor);
 	}
 	public void setDestino(Localidade destino) throws Exception {
 		if (destino == null) {
@@ -47,7 +52,7 @@ public class Passagem {
 		return this.destino;
 	}
 	public void setOrigem(Localidade origem) throws Exception {
-		if (this.origem == null) {
+		if (origem == null) {
 			throw new Exception("Informe a origem!");
 		}
 		this.origem = origem;
@@ -102,5 +107,14 @@ public class Passagem {
 			throw new Exception("A data de retorno não foi informada, informe a data de retorno!");
 		}
 		return this.dataRetorno;
+	}
+	public void apresentarPassagem() throws Exception {
+		System.out.println("Obrigado por escolher a nossa agência aérea!");
+		System.out.println("Origem: " + this.getOrigem().getCidade() + " - " + this.getOrigem().getPais() + "  Destino: " + this.getDestino().getCidade() + " - " + this.getDestino().getPais());
+		System.out.println("Valor da passagem: R$" + this.getValor());
+		System.out.println("Nome do passageiro: " + this.getPassageiro().getNome());
+		System.out.println("CPF: " + this.getPassageiro().getCpf());
+		System.out.println("Data de ida: " + this.getDataIda().getDate() + "/" + this.getDataIda().getMonth() + "/" + this.getDataIda().getYear());
+		System.out.println("Data de retorno: " + this.getDataRetorno().getDate() + "/" + this.getDataRetorno().getMonth() + "/" + this.getDataRetorno().getYear());
 	}
 }
