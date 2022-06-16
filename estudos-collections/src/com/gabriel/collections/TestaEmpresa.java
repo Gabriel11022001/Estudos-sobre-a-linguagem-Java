@@ -35,6 +35,11 @@ public class TestaEmpresa {
 			empresa.registrarFuncionario(func1);
 			empresa.registrarFuncionario(func2);
 			empresa.apresentarOsFuncionariosDaEmpresa();
+			if (empresa.buscarFuncionarioComNome("Maria Fernanda da Silva") != null) {
+				System.out.println("A Maria Fernanda da Silva está registrada na empresa!");
+			} else {
+				System.out.println("A Maria Fernanda da Silva não está registrada na empresa!");
+			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();

@@ -1,21 +1,26 @@
 package com.gabriel.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Empresa {
 
 	private String nome;
 	private List<Funcionario> funcionarios;
 	private double totalBonificacoesDaEmpresa;
+	private Map<String, Funcionario> registrosDeFuncionariosPeloNome;
 
 	public Empresa() {
 		this.nome = "";
 		this.funcionarios = new ArrayList<Funcionario>();
+		this.registrosDeFuncionariosPeloNome = new HashMap<String, Funcionario>();
 	}
 	public Empresa(String nome) {
 		this.setNome(nome);
 		this.funcionarios = new ArrayList<>();
+		this.registrosDeFuncionariosPeloNome = new HashMap<String, Funcionario>();
 	}
 	public String getNome() {
 		return this.nome;
@@ -41,6 +46,7 @@ public class Empresa {
 		}
 		this.totalBonificacoesDaEmpresa += funcionario.calcularBonificacao();
 		this.funcionarios.add(funcionario);
+		this.registrosDeFuncionariosPeloNome.put(funcionario.getNome(), funcionario);
 	}
 	public List<Funcionario> getFuncionarios() {
 		if (this.funcionarios.size() == 0) {
@@ -69,10 +75,14 @@ public class Empresa {
 					"A referência para o objeto do tipo Funcionario não deve apontar para null!");
 		}
 		this.getFuncionarios().remove(funcionario);
+		this.registrosDeFuncionariosPeloNome.remove(funcionario.getNome());
 		this.totalBonificacoesDaEmpresa -= funcionario.calcularBonificacao();
 		System.out.println("Funcionário demitido!");
 	}
 	public boolean funcionarioEstaRegistrado(Funcionario funcionario) {
 		return this.funcionarios.contains(funcionario);
+	}
+	public Funcionario buscarFuncionarioComNome(String nome) {
+		return this.registrosDeFuncionariosPeloNome.get(nome);
 	}
 }
