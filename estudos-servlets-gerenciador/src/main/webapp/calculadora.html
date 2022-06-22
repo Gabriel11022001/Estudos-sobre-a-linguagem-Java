@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>
+		Calculadora
+	</h1>
+	<br>
+	<form action="/estudos-servlets-gerenciador/calculadora" method="post">
+		<label for="primeiroValor">Primeiro valor:</label>
+		<br>
+		<input type="number" id="primeiroValor" name="primeiroValor">
+		<br>
+		<label for="segundoValor">Segundo valor:</label>
+		<br>
+		<input type="number" id="segundoValor" name="segundoValor">
+		<br>
+		<label for="operacao">Operação</label>
+		<br>
+		<select id="operacao" name="operacao">
+			<option value="soma">Soma</option>
+			<option value="subtração">Subtração</option>
+			<option value="multiplicação">Multiplicação</option>
+			<option value="divisão">Divisão</option>
+		</select>
+		<br>
+		<button type="submit">Enviar</button>
+	</form>
+</body>
+</html>
