@@ -6,7 +6,7 @@ public class ConnectionFactory {
 
 	public Connection getConnection() throws SQLException {
 		String usuario = "root";
-		String senha = "Gabriel@11022001";
+		String senha = "";
 		String banco = "db_loja_virtual";
 		Connection conexao = null;
 		try {

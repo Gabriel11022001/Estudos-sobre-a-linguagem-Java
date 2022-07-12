@@ -18,7 +18,6 @@ INDEX VERSION 1.131+C:\Users\Gabriel\Desktop\Arquivos\Cursos\Estudos sobre a lin
 908673860.index
 4031961297.index
 2570025416.index
-191762257.index
 981686520.index
 1374762053.index
 3540142458.index
@@ -27,10 +26,10 @@ INDEX VERSION 1.131+C:\Users\Gabriel\Desktop\Arquivos\Cursos\Estudos sobre a lin
 3547769516.index
 3170547267.index
 1970796994.index
-2529728315.index
-1969763828.index
 1014153716.index
+1969763828.index
 147395277.index
+2529728315.index
 2348498892.index
 1976504586.index
 86985137.index
@@ -47,8 +46,8 @@ INDEX VERSION 1.131+C:\Users\Gabriel\Desktop\Arquivos\Cursos\Estudos sobre a lin
 3490476245.index
 1011037409.index
 74923113.index
-2395302203.index
 2206932768.index
+2395302203.index
 1800375483.index
 4242803185.index
 1200566372.index
