@@ -1,7 +1,5 @@
 package com.gabrielsantos.exerciciossobrepoo.exercicio28;
 
-import java.util.Collections;
-
 public class MinhaListaGenerica<T> {
 
 	private T[] elementos;
@@ -76,9 +74,9 @@ public class MinhaListaGenerica<T> {
 		if (indice < 0 || indice > (this.elementos.length - 1)) {
 			throw new Exception("A lista não possui esse índice!");
 		}
+		T[] elementosAux = (T[]) new Object[this.elementos.length - 1];
 		// Está tentando remover do índice 0.
 		if (indice == 0) {
-			T[] elementosAux = (T[]) new Object[this.elementos.length - 1];
 			for (int i = 1; i < elementosAux.length; i++) {
 				elementosAux[i - 1] = this.elementos[i];
 			}
